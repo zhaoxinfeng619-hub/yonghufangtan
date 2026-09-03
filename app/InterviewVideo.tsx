@@ -4,9 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import "./interview-video.css";
 
 const clips = [
-  { label: "上", title: "访谈现场 · 01", src: "/assets/overview-interview-1.mp4" },
-  { label: "中", title: "访谈现场 · 02", src: "/assets/overview-interview-2.mp4" },
-  { label: "下", title: "访谈现场 · 03", src: "/assets/overview-interview-3.mp4" },
+  { label: "上", title: "访谈现场 · 01", src: "assets/overview-interview-1.mp4" },
+  { label: "中", title: "访谈现场 · 02", src: "assets/overview-interview-2.mp4" },
+  { label: "下", title: "访谈现场 · 03", src: "assets/overview-interview-3.mp4" },
 ];
 
 export default function InterviewVideo() {
@@ -22,7 +22,7 @@ export default function InterviewVideo() {
 
   return (
     <div className="interview-video-player">
-      <video ref={videoRef} controls playsInline preload="metadata" poster="/assets/overview-interview-poster.jpg" aria-label={`${active.title}视频`}>
+      <video ref={videoRef} controls playsInline preload="metadata" poster="assets/overview-interview-poster.jpg" aria-label={`${active.title}视频`}>
         <source src={active.src} type="video/mp4" />
         你的浏览器暂不支持视频播放。
       </video>

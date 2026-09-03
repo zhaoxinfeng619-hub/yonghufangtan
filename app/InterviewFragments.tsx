@@ -19,7 +19,7 @@ const fragments: Fragment[] = [
     tag: "公域获客",
     title: "转化率低，客户流失原因不清楚",
     quote: "从内容浏览、私信咨询到添加企微，每一步都在流失。",
-    audio: "/assets/fragment-01.mp3",
+    audio: "assets/fragment-01.mp3",
     dialogue: [
       { speaker: "访谈人", text: "你在这些平台发内容，一周大概能收到多少私信？又能加到多少个企业微信好友？" },
       { speaker: "被访谈人", text: "帖子差不多有四五千次浏览，可能才会有一个能继续聊下去的客户。很多人我给他说话，他也不回复。我不知道是他本来不想回复，还是因为我回复得比较慢。" },
@@ -34,7 +34,7 @@ const fragments: Fragment[] = [
     tag: "销售能力",
     title: "经验依赖个人，优秀话术难复制",
     quote: "我拿捏不准客户的心理，也不知道他到底在想什么。",
-    audio: "/assets/fragment-02.mp3",
+    audio: "assets/fragment-02.mp3",
     dialogue: [
       { speaker: "访谈人", text: "你觉得领导做得比你好，具体好在哪里？" },
       { speaker: "被访谈人", text: "我觉得他说话和表达的方式比我好。而且他跟客户聊一段时间以后，就能判断这个客户能不能成交，经验比我丰富。" },
@@ -49,7 +49,7 @@ const fragments: Fragment[] = [
     tag: "内容生产",
     title: "通用 AI 生成内容，仍需手动修改",
     quote: "能不能直接一次写出一篇我可以使用的内容？",
-    audio: "/assets/fragment-03.mp3",
+    audio: "assets/fragment-03.mp3",
     dialogue: [
       { speaker: "访谈人", text: "除了豆包以外，你平常还会使用其他 AI 工具吗？" },
       { speaker: "被访谈人", text: "不会，现在就使用豆包。" },

@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   title: "守护台｜保险销售 AI 工作台",
   description: "面向线上保险销售的 AI 销售辅助工作台。",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "favicon.svg",
+    shortcut: "favicon.svg",
   },
 };
 

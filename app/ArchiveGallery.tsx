@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import "./archive-gallery.css";
 
 const images = [
-  { src: "/assets/VIjZHAKo.png", type: "PNG", title: "项目筹备会背景图" },
-  { src: "/assets/9cfeaf3426a6e485b57dba2b5571baca.jpg", type: "JPG", title: "资料归档说明图" },
+  { src: "assets/VIjZHAKo.png", type: "PNG", title: "项目筹备会背景图" },
+  { src: "assets/9cfeaf3426a6e485b57dba2b5571baca.jpg", type: "JPG", title: "资料归档说明图" },
 ];
 
 export default function ArchiveGallery() {
@@ -34,7 +34,7 @@ export default function ArchiveGallery() {
             <span>查看图片 <i>↗</i></span>
           </button>
         ))}
-        <a className="archive-card archive-document-card" href="/assets/AI-sales-workbench-user-interviews.pdf" target="_blank" rel="noreferrer">
+        <a className="archive-card archive-document-card" href="assets/AI-sales-workbench-user-interviews.pdf" target="_blank" rel="noreferrer">
           <b>PDF</b>
           <strong>AI 销售工作台项目·用户访谈</strong>
           <span>打开访谈文档 <i>↗</i></span>
