@@ -44,6 +44,9 @@ export default defineConfig(async () => {
   const { cloudflare } = await import("@cloudflare/vite-plugin");
 
   return {
+    // GitHub Pages serves this app from a repository subpath. Vite's client
+    // preload helper uses this base for lazy-loaded component CSS and chunks.
+    base: process.env.GITHUB_PAGES === "true" ? "/yonghufangtan/" : "/",
     server: isCodexSeatbeltSandbox
       ? { watch: { useFsEvents: false, usePolling: true } }
       : undefined,
