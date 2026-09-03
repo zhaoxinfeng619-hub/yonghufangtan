@@ -21,11 +21,7 @@ async function visit(directory) {
     const extension = path.split(".").pop();
     if (!extension || !["html", "js", "css", "rsc", "json"].includes(extension)) continue;
     const source = await readFile(path, "utf8");
-    const fixed = source
-      .replace(/(?<!yonghufangtan)\/_next\//g, `${prefix}/_next/`)
-      // Vite stores lazy dependency URLs without a leading slash in its
-      // preload map; make those absolute within the project as well.
-      .replace(/(["'`])_next\/static\//g, `$1${prefix}/_next/static/`);
+    const fixed = source.replace(/(?<!yonghufangtan)\/_next\//g, `${prefix}/_next/`);
     if (fixed !== source) await writeFile(path, fixed);
   }
 }
