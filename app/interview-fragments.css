@@ -1,0 +1,240 @@
+.fragment-grid {
+  background: #fdfcf7;
+  border-radius: 18px;
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 52px;
+  overflow: hidden;
+}
+
+.fragment-card {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-left: 1px solid #59b8a8;
+  color: #132c3a;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  min-height: 224px;
+  padding: 26px 30px 22px;
+  position: relative;
+  text-align: left;
+  transition: background .25s, transform .25s;
+}
+
+.fragment-card:first-child {
+  border-left: 0;
+}
+
+.fragment-card:hover,
+.fragment-card:focus-visible {
+  background: #e9f2ed;
+  outline: none;
+}
+
+.fragment-card:focus-visible {
+  box-shadow: inset 0 0 0 2px #3eaa99;
+}
+
+.fragment-number {
+  color: #4eafa0;
+  font-size: 11px;
+  letter-spacing: .12em;
+}
+
+.fragment-tag {
+  color: #829791;
+  font-size: 11px;
+  margin-top: 8px;
+}
+
+.fragment-card strong {
+  font-size: clamp(17px, 1.5vw, 22px);
+  font-weight: 500;
+  line-height: 1.3;
+  margin-top: 24px;
+}
+
+.fragment-quote {
+  color: #637a79;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.fragment-open {
+  color: #2d9385;
+  font-size: 10px;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.fragment-open span {
+  margin-left: 8px;
+}
+
+.fragment-modal-backdrop {
+  align-items: center;
+  background: rgba(3, 12, 15, .76);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 28px;
+  position: fixed;
+  z-index: 30;
+}
+
+.fragment-modal {
+  background: #f4f2e9;
+  border-radius: 14px;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, .38);
+  color: #132c3a;
+  max-height: min(860px, 92vh);
+  max-width: 980px;
+  overflow: auto;
+  width: 100%;
+}
+
+.fragment-modal-header {
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(19, 44, 58, .16);
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 32px 24px;
+}
+
+.fragment-modal-header .label {
+  color: #267f79;
+  margin: 0 0 13px;
+}
+
+.fragment-modal-header h2 {
+  font-size: clamp(24px, 3vw, 38px);
+  font-weight: 400;
+  letter-spacing: -.04em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.fragment-close {
+  background: transparent;
+  border: 0;
+  color: #55706e;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 1;
+  padding: 0 4px;
+}
+
+.fragment-player {
+  align-items: center;
+  background: #183a49;
+  color: #d9e5dc;
+  display: flex;
+  gap: 20px;
+  padding: 15px 32px;
+}
+
+.fragment-player > span {
+  flex: 0 0 auto;
+  font-size: 11px;
+  letter-spacing: .08em;
+}
+
+.fragment-player audio {
+  height: 34px;
+  min-width: 260px;
+  width: 100%;
+}
+
+.fragment-modal-body {
+  display: grid;
+  gap: 34px;
+  grid-template-columns: 1.35fr .65fr;
+  padding: 28px 32px 36px;
+}
+
+.fragment-section-label {
+  color: #4eafa0;
+  font-size: 10px;
+  letter-spacing: .16em;
+  margin: 0 0 18px;
+  text-transform: uppercase;
+}
+
+.dialogue-line {
+  border-left: 2px solid #9bb7b2;
+  margin-bottom: 16px;
+  padding-left: 13px;
+}
+
+.dialogue-line.interviewee {
+  border-color: #d0a76c;
+}
+
+.dialogue-line > span {
+  color: #738a87;
+  font-size: 10px;
+}
+
+.dialogue-line p {
+  color: #314c56;
+  font-size: 13px;
+  line-height: 1.65;
+  margin: 5px 0 0;
+}
+
+.fragment-pain {
+  align-self: start;
+  background: #e4eee8;
+  border-radius: 8px;
+  padding: 21px;
+  position: sticky;
+  top: 0;
+}
+
+.fragment-pain p:last-child {
+  color: #31545b;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .fragment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fragment-card,
+  .fragment-card:first-child {
+    border-left: 0;
+    border-top: 1px solid #59b8a8;
+    min-height: 180px;
+  }
+
+  .fragment-card:first-child {
+    border-top: 0;
+  }
+
+  .fragment-modal-body {
+    grid-template-columns: 1fr;
+    padding: 23px 22px 28px;
+  }
+
+  .fragment-modal-header {
+    padding: 23px 22px 20px;
+  }
+
+  .fragment-player {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 22px;
+  }
+
+  .fragment-player audio {
+    min-width: 0;
+  }
+}

@@ -1,0 +1,237 @@
+/* Keep the hero wall filled and make hover feedback reliable in 3D transforms. */
+.drift-columns {
+  min-width: max-content;
+}
+
+.drift-overlay {
+  pointer-events: none;
+}
+
+.drift-wall .drift-tile.is-active {
+  box-shadow: 0 26px 45px rgba(0, 0, 0, .55);
+  filter: brightness(1.16) saturate(1.12);
+  opacity: 1;
+  transform: translateZ(var(--lift)) scale(1.045);
+  z-index: 2;
+}
+
+.drift-wall .drift-tile.is-active .drift-overlay {
+  opacity: 0;
+}
+
+.hero-drift:after {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, .38), rgba(0, 0, 0, .04) 55%, rgba(0, 0, 0, .22)),
+    linear-gradient(180deg, rgba(0, 0, 0, .12), transparent 35%, rgba(0, 0, 0, .24));
+}
+
+.hero-drift .drift-columns {
+  top: 50%;
+}
+
+.hero-copy {
+  pointer-events: none;
+}
+
+.hero-copy .pill {
+  pointer-events: auto;
+}
+
+.user-day-video {
+  border: 1px solid rgba(118, 202, 187, .3);
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: min(100%, 1040px);
+}
+
+.user-day-video video {
+  background: #000;
+  display: block;
+  height: auto;
+  max-height: 70vh;
+  width: 100%;
+}
+
+.journey-map {
+  border: 1px solid rgba(225, 190, 99, .22);
+  border-radius: 10px;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.overview-info {
+  align-items: start;
+  gap: clamp(36px, 6vw, 96px);
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, .8fr);
+}
+
+.overview-video .label {
+  color: #267f79;
+}
+
+.overview-video video {
+  background: #10212c;
+  border: 1px solid rgba(19, 44, 58, .2);
+  border-radius: 8px;
+  display: block;
+  height: auto;
+  max-height: 620px;
+  width: 100%;
+}
+.overview-video .video-note {
+  color: #777970;
+  display: block;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.overview-details .content-item strong {
+  color: #267f79;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.demo-section {
+  background: #e5e6df;
+  color: #132c3a;
+}
+
+.demo-section .label {
+  color: #267f79;
+}
+
+.demo-heading {
+  align-items: end;
+  display: grid;
+  gap: 7vw;
+  grid-template-columns: 1.1fr .9fr;
+  margin-bottom: 54px;
+}
+
+.demo-heading h2 {
+  font-size: clamp(40px, 6vw, 82px);
+  font-weight: 400;
+  letter-spacing: -.08em;
+  line-height: .95;
+  margin: 0;
+}
+
+.demo-heading h2 em {
+  color: #267f79;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.demo-heading p {
+  color: #687a78;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 340px;
+}
+
+.demo-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.demo-card {
+  align-items: center;
+  background: #f8f8f1;
+  border: 1px solid rgba(19, 44, 58, .18);
+  display: flex;
+  gap: 18px;
+  min-height: 116px;
+  padding: 22px;
+  transition: background .2s, transform .2s, border-color .2s;
+}
+
+.demo-card:hover,
+.demo-card:focus-visible {
+  background: #fffef8;
+  border-color: #267f79;
+  outline: none;
+  transform: translateY(-3px);
+}
+
+.demo-icon {
+  align-items: center;
+  background: #16394b;
+  border-radius: 8px;
+  color: #75cab9;
+  display: inline-flex;
+  flex: 0 0 50px;
+  font-size: 13px;
+  font-weight: 600;
+  height: 50px;
+  justify-content: center;
+}
+
+.demo-card-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.demo-card-copy b {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.demo-card-copy small {
+  color: #748482;
+  font-size: 11px;
+}
+
+.demo-arrow {
+  color: #267f79;
+  font-size: 18px;
+  margin-left: auto;
+}
+
+@media (max-width: 800px) {
+  .overview-info {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-heading {
+    align-items: start;
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}
+
+/* These two sections are now part of the visible six-tab story. */
+#needs,
+#archive {
+  display: block;
+}
+
+/* With the brand mark removed, keep the navigation balanced and centred. */
+.nav {
+  justify-content: center;
+}
+
+.nav small {
+  position: absolute;
+  right: 5vw;
+}
+
+@media (max-width: 800px) {
+  .nav {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-drift .drift-columns {
+    top: 53%;
+  }
+}
