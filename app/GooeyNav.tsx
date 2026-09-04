@@ -58,6 +58,7 @@ export default function GooeyNav({
       "--gooey-radius": `${particleR}px`,
       "--gooey-origin-x": `${((activeIndex + 0.5) / items.length) * 100}%`,
       "--gooey-item-width": `${100 / items.length}%`,
+      "--gooey-count": items.length,
     } as CSSProperties}>
       <div className="gooey-nav__surface">
         <div className="gooey-nav__liquid" aria-hidden="true">
