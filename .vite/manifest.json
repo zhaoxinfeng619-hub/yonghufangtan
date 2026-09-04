@@ -1,0 +1,122 @@
+{
+  "_framework-BgSIrAUN.js": {
+    "file": "_next/static/chunks/framework-BgSIrAUN.js",
+    "name": "framework",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js"
+    ]
+  },
+  "_rolldown-runtime-C60lm6uB.js": {
+    "file": "_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+    "name": "rolldown-runtime"
+  },
+  "app/ArchiveGallery.tsx": {
+    "file": "_next/static/chunks/ArchiveGallery-DRdvc8pC.js",
+    "name": "ArchiveGallery",
+    "src": "app/ArchiveGallery.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-BgSIrAUN.js"
+    ],
+    "css": [
+      "_next/static/css/ArchiveGallery.C2twN60V.css"
+    ]
+  },
+  "app/DriftWall.tsx": {
+    "file": "_next/static/chunks/DriftWall-C3OJg1te.js",
+    "name": "DriftWall",
+    "src": "app/DriftWall.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-BgSIrAUN.js"
+    ],
+    "css": [
+      "_next/static/css/DriftWall.D4w0Y6hr.css"
+    ]
+  },
+  "app/GooeyNav.tsx": {
+    "file": "_next/static/chunks/GooeyNav-CN3EONam.js",
+    "name": "GooeyNav",
+    "src": "app/GooeyNav.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-BgSIrAUN.js"
+    ],
+    "css": [
+      "_next/static/css/GooeyNav.BQv8wJuD.css"
+    ]
+  },
+  "app/InterviewFragments.tsx": {
+    "file": "_next/static/chunks/InterviewFragments-CzpDqfbV.js",
+    "name": "InterviewFragments",
+    "src": "app/InterviewFragments.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-BgSIrAUN.js"
+    ],
+    "css": [
+      "_next/static/css/InterviewFragments.0CFbqDEp.css"
+    ]
+  },
+  "app/InterviewVideo.tsx": {
+    "file": "_next/static/chunks/InterviewVideo-DerozRzD.js",
+    "name": "InterviewVideo",
+    "src": "app/InterviewVideo.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-BgSIrAUN.js"
+    ],
+    "css": [
+      "_next/static/css/InterviewVideo.BmT0sy49.css"
+    ]
+  },
+  "app/NeedsSection.tsx": {
+    "file": "_next/static/chunks/NeedsSection-BySa4wt_.js",
+    "name": "NeedsSection",
+    "src": "app/NeedsSection.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-BgSIrAUN.js"
+    ],
+    "css": [
+      "_next/static/css/NeedsSection.B9KET1vp.css"
+    ]
+  },
+  "node_modules/vinext/dist/shims/layout-segment-context.js": {
+    "file": "_next/static/chunks/layout-segment-context-DYW9COzp.js",
+    "name": "layout-segment-context",
+    "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-BgSIrAUN.js"
+    ]
+  },
+  "virtual:vinext-app-browser-entry": {
+    "file": "_next/static/chunks/index-BmFt88IA.js",
+    "name": "index",
+    "src": "virtual:vinext-app-browser-entry",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-BgSIrAUN.js"
+    ],
+    "dynamicImports": [
+      "virtual:vinext-app-browser-entry",
+      "app/GooeyNav.tsx",
+      "node_modules/vinext/dist/shims/layout-segment-context.js",
+      "app/InterviewVideo.tsx",
+      "app/ArchiveGallery.tsx",
+      "app/NeedsSection.tsx",
+      "app/DriftWall.tsx",
+      "app/InterviewFragments.tsx"
+    ]
+  }
+}
