@@ -37,7 +37,7 @@
     ]
   },
   "app/GooeyNav.tsx": {
-    "file": "_next/static/chunks/GooeyNav-CN3EONam.js",
+    "file": "_next/static/chunks/GooeyNav-CtR__lxN.js",
     "name": "GooeyNav",
     "src": "app/GooeyNav.tsx",
     "isDynamicEntry": true,
@@ -46,7 +46,7 @@
       "_framework-BgSIrAUN.js"
     ],
     "css": [
-      "_next/static/css/GooeyNav.BQv8wJuD.css"
+      "_next/static/css/GooeyNav.BkWB5xci.css"
     ]
   },
   "app/InterviewFragments.tsx": {
@@ -89,7 +89,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "_next/static/chunks/layout-segment-context-DYW9COzp.js",
+    "file": "_next/static/chunks/layout-segment-context-APfGYRW5.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -100,7 +100,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "_next/static/chunks/index-BmFt88IA.js",
+    "file": "_next/static/chunks/index-B2LJ4Sq-.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
